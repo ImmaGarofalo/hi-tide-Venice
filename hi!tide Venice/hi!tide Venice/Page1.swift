@@ -18,29 +18,40 @@ struct Page1: View {
                 }
                 Section{
                     List{
+                        
                         Text("Accademia")
                             .fontWeight(.semibold)
                             .font(.title2)
-                        Text("Altitude: 115 cm                               -65 cm")
+                        Text("Altitude: 115 cm                              -65 cm")
+                            .padding(.bottom)
                         
                         
                         Text("Campo Santa Margherita")
                             .fontWeight(.semibold)
                             .font(.title2)
-                        Text("Altitude: 120 cm                               -70 cm")
+                        Text("Altitude: 120 cm                              -70 cm")
+                            .padding(.bottom)
                         
                         Text("Piazza San Marco")
                             .fontWeight(.semibold)
                             .font(.title2)
-                        Text("Altitude: 80 cm                                -30 cm")
+                        Text("Altitude: 80 cm                               -30 cm")
+                            .padding(.bottom)
                         
                         Text("Rialto")
                             .fontWeight(.semibold)
                             .font(.title2)
-                        Text("Altitude: 115 cm                               -65 cm")
+                        Text("Altitude: 115 cm                              -65 cm")
+                            .padding(.bottom)
                      
                         
-                    }.navigationTitle("Places")
+                    }.navigationBarTitleDisplayMode(.inline)
+                        .toolbar{
+                            ToolbarItem(placement:.principal){
+                                Text("Places").font(.system(size: 30)).fontWeight(.bold)
+                            }
+                        }
+                        
                     
                     
                     

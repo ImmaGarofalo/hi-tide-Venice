@@ -45,7 +45,7 @@ struct ContentView: View {
                         Text("+ 50 cm")
                             .fontWeight(.semibold)
                             .font(.title)
-                    }.offset(x:0, y:260)
+                    }.offset(x:0, y:280)
                     
                         
                 }.padding(.bottom, 170)

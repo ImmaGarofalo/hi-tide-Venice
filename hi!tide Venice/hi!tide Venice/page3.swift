@@ -9,10 +9,22 @@ import SwiftUI
 
 struct page3: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            Image("pagina3")
+                .resizable()
+                .frame(width: 450, height: 1000)
+                .offset(x:0, y: 10)
+            
+                .navigationBarTitleDisplayMode(.inline)
+                    .toolbar{
+                        ToolbarItem(placement:.principal){
+                            Text("Footbridges").font(.system(size: 30)).fontWeight(.bold)
+            
+        }
+                }
+            }
     }
 }
-
 struct page3_Previews: PreviewProvider {
     static var previews: some View {
         page3()

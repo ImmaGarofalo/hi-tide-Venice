@@ -21,25 +21,32 @@ struct Page2: View {
                             .fontWeight(.semibold)
                             .font(.title2)
                         Text("Altitude: 105 cm                              -55 cm")
-                        
+                            .padding(.bottom)
                         
                         Text("Arsenale")
                             .fontWeight(.semibold)
                             .font(.title2)
                         Text("Altitude: 150 cm                            -100 cm")
+                            .padding(.bottom)
                         
                         Text("Ca' d'Oro")
                             .fontWeight(.semibold)
                             .font(.title2)
-                        Text("Altitude: 120 cm                               -70 cm")
+                        Text("Altitude: 120 cm                              -70 cm")
+                            .padding(.bottom)
                         
                         Text("Ferrovia Linea 1")
                             .fontWeight(.semibold)
                             .font(.title2)
                         Text("Altitude: 125 cm                              -55 cm")
-                     
+                            .padding(.bottom)
                         
-                    }.navigationTitle("Ferries Stop")
+                    }.navigationBarTitleDisplayMode(.inline)
+                        .toolbar{
+                            ToolbarItem(placement:.principal){
+                                Text("Ferries Stop").font(.system(size: 30)).fontWeight(.bold).padding()
+                            }
+                        }
                     
                     
                     
